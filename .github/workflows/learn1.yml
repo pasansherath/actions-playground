@@ -1,0 +1,16 @@
+# filepath: .githun/worflows/lean1.yml
+name: learn1
+on:
+  push:
+     branches:
+       - main
+     pull_request: {}
+     workflow_dispatch: {}
+
+jobs:
+  leanr1:
+     runs-on: ubuntu-latest
+     steps:
+       - name: first-step
+         run:
+           echo "Hello World!'
